@@ -32,6 +32,13 @@ echo "Try enter this query"
 echo "{ hello }"
 
 echo
+echo "Or you can try with curl"
+echo 'curl -X POST \'
+echo ' -H "Content-Type: application/json" \'
+echo " -d '{\"query\": \"{ hello }\"}' \\"
+echo '  http://localhost:4000/graphql'
+
+echo
 echo "code helloworld-graphql/server.js"
 echo "Setup done! Be about to start server..."
 node server.js
