@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link data-require="bootstrap@*" data-semver="3.3.2" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+    
+    <script data-require="jquery@2.1.3" data-semver="2.1.3" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script data-require="bootstrap@*" data-semver="3.3.2" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script data-require="angular.js@*" data-semver="1.3.14" src="https://code.angularjs.org/1.3.14/angular.js"></script>
+    <script src="./node_modules/angularjs-dropdown-multiselect/src/angularjs-dropdown-multiselect.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body ng-app="myApp">
+    <div ng-controller="MyController">
+      <b>{{message}}</b>&nbsp;
+      <a href="http://dotansimha.github.io/angularjs-dropdown-multiselect">http://dotansimha.github.io/angularjs-dropdown-multiselect</a>
+      <br/><br/>Example given on above url<br/>
+      <div ng-dropdown-multiselect="" 
+          options="data" 
+          selected-model="model" 
+          group-by="group"
+          events="events"
+          extra-settings="settings"></div>
+      <br/>
+    </div>
+</body>
+
+</html>
