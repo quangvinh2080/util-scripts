@@ -21,7 +21,7 @@ if [ "$1" != "" ]
 then
   npx create-react-app $1
   cd $1
-  npm install --save react-native-web
+  yarn add react-native-web
 
   restructure-dir
   create-file-getting-start
