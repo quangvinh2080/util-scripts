@@ -29,7 +29,7 @@ if [ "$1" != "" ]
 then
   npx create-react-app $1
   cd $1
-  yarn add react-native-web
+  yarn add react-native-web styled-components
 
   restructure-dir
   create-file-getting-start
