@@ -17,6 +17,14 @@ function create-file-getting-start() {
   rm src/App.js
 }
 
+if [ "$2" != "" ]
+then
+	:
+else
+  echo "Please specify destination"
+  exit
+fi
+
 if [ "$1" != "" ]
 then
   npx create-react-app $1
@@ -25,6 +33,10 @@ then
 
   restructure-dir
   create-file-getting-start
+
+  cd ..
+  mv $1 $2
+  cd $2
 
   npm start
 else
