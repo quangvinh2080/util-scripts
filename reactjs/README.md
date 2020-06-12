@@ -1,6 +1,6 @@
-1. To create react application with storybook
+1. To add storybook to react
 
-`./init-react-and-storybook.sh`
+`./add-storybook-to-app.sh
 
 2. To create react application with react-native-web
 
