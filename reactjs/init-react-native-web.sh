@@ -29,7 +29,12 @@ if [ "$1" != "" ]
 then
   npx create-react-app $1
   cd $1
+  echo "Add react-native-web, styled-components"
   yarn add react-native-web styled-components
+  echo "Add react-native-navigation@5"
+  yarn add @react-navigation/native
+  echo "Add dependencies"
+  yarn add react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
 
   restructure-dir
   create-file-getting-start
